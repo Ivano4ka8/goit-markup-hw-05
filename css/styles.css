@@ -523,6 +523,9 @@ img {
   border-top: none;
 }
 
+.section-description {
+  color: var(--text-color);
+}
 /* ------Modalka------ */
 
 .backdrop {
@@ -540,9 +543,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: translate var(--main-transition);
-  
+  transform: translate(-50%, -50%) scale(1.2);
+  transition: translate var(--main-transition), scale 300ms ease-in-out;
 
   width: 408px;
   min-height: 576px;
@@ -553,9 +555,8 @@ img {
 
   padding: 88 516 12 516;
 }
-.backdrop.is-hidden  .modal {
-  transform: translate(-50%, -50%) scale(1.5);
-
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1);
 }
 .modal-close {
   position: absolute;
